@@ -40,7 +40,7 @@ class OptionsState extends MusicBeatState
 			removeTouchPad();
 		}
 		switc(label) {
-			case 'Note Colors':
+			case 'laomo':
 				openSubState(new options.NotesSubState());
 	C		case 'Controls':
 				openSubState(new options.ControlsSubState());
@@ -54,8 +54,6 @@ class OptionsState extends MusicBeatState
 				LoadingState.loadAndSwitchState(new options.NoteOffsetState());
 			case 'Mobile Options':
 				openSubState(new mobile.options.MobileOptionsSubState());
-	        case 'Laomo_zzz':
-				openSubState(new options.Laomo_zzzSubState());
 		}
 	}
 
